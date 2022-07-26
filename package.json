@@ -1,0 +1,29 @@
+{
+  "name": "authenticate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SodaJyu/Authenticate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SodaJyu/Authenticate/issues"
+  },
+  "homepage": "https://github.com/SodaJyu/Authenticate#readme",
+  "devDependencies": {
+    "@types/node": "^18.6.1",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "knex": "^2.2.0"
+  }
+}
