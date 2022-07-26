@@ -1,5 +1,4 @@
 const authModel = require("../models/authModel");
-
 import { Request, Response } from 'express';
 
 module.exports = {
@@ -21,8 +20,14 @@ module.exports = {
             password: password,
         };
 
-        await authModel.createUser(userObj);
+        if (id) {
+            await authModel.updateUser(userObj);
+        } else {
+            await authModel.createUser(userObj);
 
+        }
         res.status(200).send(userObj);
-    }
+    },
+
+
 }
